@@ -6,7 +6,12 @@ public class index {
         b = 0;
 
         System.out.println("Start");
-        c = a / b;
+        try {
+            c = a / b;
+        } catch (ArithmeticException exception) {
+            c = -1;
+        }
+
         System.out.println("Answer : " + c);
         System.out.println("End");
     }
